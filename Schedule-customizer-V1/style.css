@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+* {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 2px 2px 10px #888888;
+    width: 50vw; 
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto; 
+  
+} 
+
+tr, td, th {
+    padding: 10px;
+    transition: 0.4s;
+}
+
+tr:first-child > * {
+    background-color: #04AA6D;
+    color: white;
+    text-align: left;
+}
+
+tr {
+    color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #04aa6d18;
+}
+
+tr:hover {
+    opacity: 0.6;
+}
+
+input {
+    border: none;
+    font-family: 'Hind Madurai', sans-serif;
+    color: gray;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+
+button {
+    position: relative;
+    left: 45vw;
+    top: 2.6vh;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1.5px;
+}
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #888888;
+  color: #04AA6D;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #04AA6D;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
