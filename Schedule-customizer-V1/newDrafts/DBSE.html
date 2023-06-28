@@ -1,0 +1,130 @@
+<!--This HTML file is for the Dynamic Bell Schedule Editor-->
+<!-- By: Saket Pabba -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type = "text/css" href = "DBSE.css">
+    <title> Dynamic Schedule Editor </title>
+
+</head>
+
+
+<body>
+
+
+    <title> ghhgh</title>
+
+    <section class = "wrapper-main">
+
+        <table class = "center" >
+
+            <caption class = "title"> </caption>
+            <!-- Headings -->
+            <tr>
+                <th>Period </th>
+                <th>Time Frames</th>
+                <th>Duration</th>
+            </tr>
+                <!-- Homeroom -->
+            <tr>
+                <td> Homeroom</td>
+                <td>7:40 - 7:45</td>
+                <td>  <input type = text class = "input-box" value = "5 minutes" maxlength = "10" size = "10"> </td> 
+            </tr>
+               <!-- First Period -->
+
+            <tr >
+                <td>Period 1</td>
+                <td>7:50 – 8:32</td>
+                <td><input type="text" class = "input-box" value="42 minutes" maxlength="10" size="10"></td>
+            </tr>
+               <!-- Second Period -->
+
+               <tr>
+                <td>Period 2</td>
+                <td>8:37 - 9:19</td>
+                <td><input type="text" class = "input-box" value="42 minutes" maxlength="10" size="10"></td>
+            </tr>
+               <!-- Third Period-->
+
+            <tr>
+                <td>Period 3</td>
+                <td>9:24 – 10:06</td>
+                <td><input type="text" class = "input-box" value="42 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 4 (1st Lunch)</td>
+                <td>10:11 – 10:35</td>
+                <td><input type="text" class = "input-box" value="24 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 5</td>
+                <td>10:40 – 10:53</td>
+                <td><input type="text" class = "input-box" value="13 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 6 (2nd Lunch)</td>
+                <td>10:58 – 11:22</td>
+                <td><input type="text" class = "input-box" value="24 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 7</td>
+                <td>11:27 – 11:40</td>
+                <td><input type="text" class = "input-box" value="13 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 8 (3rd Lunch)</td>
+                <td>11:45 - 12:09</td>
+                <td><input type="text" class = "input-box" value="24 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 9</td>
+                <td>12:14 - 12:27</td>
+                <td><input type="text" class = "input-box" value="13 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 10 (4th Lunch)</td>
+                <td>12:32 - 12:56</td>
+                <td><input type="text" class = "input-box" value="24 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 11</td>
+                <td>1:01 - 1:43</td>
+                <td><input type="text" class = "input-box" value="42 minutes" maxlength="10" size="10"></td>
+            </tr>
+            <tr>
+                <td>Period 12</td>
+                <td>1:48 - 2:30</td>
+                <td><input type="text" class = "input-box" value="42 minutes" maxlength="10" size="10"></td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <div class = "container">
+
+        <button class = "btn calculate" onclick = "calculate()"> Calculate New Bell Schedule</button>
+
+        <button class = "btn reset" value="Reload Page" onclick = "window.location.reload()"> Reset to Original Schedule </button>
+
+        <button class = "btn reset" onclick = "printSchedule()"> Print This Schedule </button>
+
+
+
+
+    </div>
+
+    <script src="DBSE.js"></script>
+
+
+
+
+</body>
+
+
+</html>
