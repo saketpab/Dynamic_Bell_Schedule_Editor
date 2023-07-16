@@ -5,7 +5,6 @@ const defaultDurations = [5, 42, 42, 42, 24, 13, 24, 13, 24, 13, 24, 42, 42];
 //console.log("1jbvkjsd");
 // setting global compare durations variable
 var  compareDurations = defaultDurations;
-
 // universal array to keep track of main schedule durations
 var mainScheduleDurations = [5, 13, 13, 13, 42, 42, 42, 42, 42, 24, 24, 24, 24];
 
@@ -23,6 +22,7 @@ var startTime = new Date(2023,9,5, 7,40)
 var passingTime = 5;
 
 function timeFrameCalculation(durations){
+
 
     let timeFrames = [];
     passingTime = 5
