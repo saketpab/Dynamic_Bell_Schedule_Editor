@@ -7,8 +7,9 @@
 /////////////////////////////rgrgb///////////
 //this is to test 
 // default durations
+
 const defaultDurations = [5, 42, 42, 42, 24, 13, 24, 13, 24, 13, 24, 42, 42];
-console.log("1jbvkjsd");
+//console.log("1jbvkjsd");
 // setting global compare durations variable
 var  compareDurations = defaultDurations;
 
@@ -22,7 +23,7 @@ var changed_periods = [false, false, false, false, false, false, false, false, f
 
 var startTime = new Date(2023,9,5, 7,40)
 
-console.log(timeFrameCalculation(defaultDurations));
+//console.log(timeFrameCalculation(defaultDurations));
 
 // all cases work for timeFrameCalculation  
 
@@ -39,7 +40,7 @@ function timeFrameCalculation(durations){
 
     var temp = "";
     //print
-     console.log("list" + startTime)
+     //console.log("list" + startTime)
 
 
      if(startTime.getHours()>12)
@@ -56,12 +57,12 @@ function timeFrameCalculation(durations){
 
      //pushes start time of a period into the array
     // timeFrames.push(startTime.getHours() + ":" + startTime.getMinutes())
-     console.log(timeFrames)
+    // console.log(timeFrames)
 
     //adds the length of the period to the start time of the period 
      startTime.setMinutes(startTime.getMinutes() + durations[i])
 
-     console.log(startTime)
+     //console.log(startTime)
 
      //puts the end time of the period into the array
      if(startTime.getHours()>12)
